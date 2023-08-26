@@ -17,10 +17,10 @@
 <head>
   <?php $this->need('public/include.php'); ?>
   <link href="<?php _getAssets('assets/lib/swiper@5.4.5/swiper.min.css'); ?>" rel="stylesheet" />
-  <script src="<?php _getAssets('assets/lib/swiper@5.4.5/swiper.min.js'); ?>"></script>
-  <script src="<?php _getAssets('assets/lib/wowjs@1.1.3/wow.min.js'); ?>"></script>
+  <!-- 原来 joe 的 js 移动到 public/footer.php -->
+  <!-- 原来 joe 的 js 移动到 public/footer.php -->
   <link href="<?php _getAssets('assets/css/joe.index.min.css'); ?>" rel="stylesheet">
-  <script src="<?php _getAssets('assets/js/joe.index.min.js'); ?>"></script>
+  <!-- 原来 joe 的 js 移动到 public/footer.php -->
 </head>
 
 <body>

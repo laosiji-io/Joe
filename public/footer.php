@@ -31,6 +31,33 @@
   </div>
 </div>
 
+<!-- joe public/include.php 的 js 移动到这 -->
+<script src="<?php _getAssets('assets/lib/jquery@3.6.1/jquery.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/scroll/scroll.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/lazysizes@5.3.2/lazysizes.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/APlayer@1.10.1/APlayer.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/sketchpad/sketchpad.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/fancybox@3.5.7/fancybox.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/extend/extend.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/qmsg/qmsg.min.js'); ?>"></script>
+<?php if ($this->options->JAside_3DTag === 'on') : ?>
+  <script src="<?php _getAssets('assets/lib/3dtag/3dtag.min.js'); ?>"></script>
+<?php endif; ?>
+<script src="<?php _getAssets('assets/lib/smooth/smooth.min.js'); ?>" async></script>
+<?php if ($this->options->JCursorEffects && $this->options->JCursorEffects !== 'off') : ?>
+  <script src="<?php _getAssets('assets/cursor/' . $this->options->JCursorEffects); ?>" async></script>
+<?php endif; ?>
+<script src="<?php _getAssets('assets/js/joe.global.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/js/joe.short.min.js'); ?>"></script>
+<?php $this->options->JCustomHeadEnd() ?>
+<!-- joe public/include.php 的 js 移动到这 -->
+
+<!-- joe index.php 的 js 移动到这 -->
+<script src="<?php _getAssets('assets/lib/swiper@5.4.5/swiper.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/lib/wowjs@1.1.3/wow.min.js'); ?>"></script>
+<script src="<?php _getAssets('assets/js/joe.index.min.js'); ?>"></script>
+<!-- joe index.php 的 js 移动到这 -->
+
 <script>
   <?php
   $cookie = Typecho_Cookie::getPrefix();

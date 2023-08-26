@@ -24,21 +24,5 @@
 <link href="<?php _getAssets('assets/lib/animate.css@4.1.1/animate.min.css'); ?>" rel="stylesheet" />
 <link href="<?php _getAssets('assets/lib/font-awesome@4.7.0/font-awesome.min.css'); ?>" rel="stylesheet" />
 <link href="<?php _getAssets('assets/lib/APlayer@1.10.1/APlayer.min.css'); ?>" rel="stylesheet" />
-<script src="<?php _getAssets('assets/lib/jquery@3.6.1/jquery.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/scroll/scroll.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/lazysizes@5.3.2/lazysizes.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/APlayer@1.10.1/APlayer.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/sketchpad/sketchpad.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/fancybox@3.5.7/fancybox.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/extend/extend.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/lib/qmsg/qmsg.min.js'); ?>"></script>
-<?php if ($this->options->JAside_3DTag === 'on') : ?>
-  <script src="<?php _getAssets('assets/lib/3dtag/3dtag.min.js'); ?>"></script>
-<?php endif; ?>
-<script src="<?php _getAssets('assets/lib/smooth/smooth.min.js'); ?>" async></script>
-<?php if ($this->options->JCursorEffects && $this->options->JCursorEffects !== 'off') : ?>
-  <script src="<?php _getAssets('assets/cursor/' . $this->options->JCursorEffects); ?>" async></script>
-<?php endif; ?>
-<script src="<?php _getAssets('assets/js/joe.global.min.js'); ?>"></script>
-<script src="<?php _getAssets('assets/js/joe.short.min.js'); ?>"></script>
-<?php $this->options->JCustomHeadEnd() ?>
+
+<!-- 原来 joe 的 js 移动到 public/footer.php -->
