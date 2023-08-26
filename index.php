@@ -1,10 +1,13 @@
 <?php
 
 /**
- * “ 心中无女人，代码自然神 - 78.AL ” <br /> “ 环境要求：PHP 5.4 ~ 7.4 ”
- * @package Joe
- * @author Joe
- * @link https://78.al
+ * Joe 修改版
+ * 效果参考 - <a href="https://laosiji.io" target="_blank">laosiji.io</a>
+ * 环境要求：PHP 5.4 ~ 7.4
+ * 修改记录参考 - <a href="https://laosiji.io" target="_blank">Joe主题修改记录</a>
+ * @package JoeLaosi
+ * @author Laosiji
+ * @link https://laosiji.io
  */
 
 ?>
