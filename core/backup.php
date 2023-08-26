@@ -1,4 +1,4 @@
-<?php $name = "Joe";
+<?php $name = "JoeLaosiji";
 $db = Typecho_Db::get();
 if (isset($_POST['type'])) {
     if ($_POST["type"] == "备份设置") {
@@ -53,7 +53,7 @@ if (isset($_POST['type'])) {
 <?php } ?>
 <?php
 echo '
-    <form class="backup" action="?Joe_backup" method="post">
+    <form class="backup" action="?JoeLaosiji_backup" method="post">
         <input type="submit" name="type" value="备份设置" />
         <input type="submit" name="type" value="还原备份" />
         <input type="submit" name="type" value="删除备份" />
