@@ -54,11 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
 					if (res.code !== 1) return;
 					let htmlStr = '';
 					res.data.datas.forEach(_ => {
+	                    let imgUrl = _.screenshot || _.url;
+	                    if (imgUrl.indexOf('http://') >= 0) {
+	                        imgUrl = imgUrl.replace('http://', 'https://');
+	                    }
 						htmlStr += `
                             <a target="_blank" rel="noopener noreferrer nofollow" class="joe_live__list-item animated bounceIn" href="${window.location.href + '?profileRoom=' + _.profileRoom + '&title=' + _.nick}">
                                 <div class="thumb">
                                     <i class="recommendTagName" style="display: ${_.recommendTagName ? '' : 'none'}">${_.recommendTagName}</i>
-                                    <img width="100%" height="100%" class="screenshot lazyload" src="${Joe.LAZY_LOAD}" data-src="${_.screenshot}" alt="${_.introduction}" />
+                                    <img width="100%" height="100%" class="screenshot lazyload" src="${Joe.LAZY_LOAD}" data-src="${imgUrl}" alt="${_.introduction}" />
                                 </div>
                                 <div class="description">
                                     <div class="avatar">
