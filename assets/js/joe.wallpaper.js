@@ -43,9 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 isLoading = false;
                 let htmlStr = '';
                 res.data.forEach(_ => {
+                    let imgUrl = _.img_1024_768 || _.url;
+                    if (imgUrl.indexOf('http://') >= 0) {
+                        imgUrl = imgUrl.replace('http://', 'https://');
+                    }
                     htmlStr += `
-                        <a class="item animated bounceIn" data-fancybox="gallery" href="${_.url}">
-                            <img width="100%" height="100%" class="lazyload" src="${Joe.LAZY_LOAD}" data-src="${_.img_1024_768 || _.url}" alt="壁纸">
+                        <a class="item animated bounceIn" data-fancybox="gallery" href="${imgUrl}">
+                            <img width="100%" height="100%" class="lazyload" src="${Joe.LAZY_LOAD}" data-src="${imgUrl}" alt="壁纸">
                         </a>`;
                 });
                 $('.joe_wallpaper__list').html(htmlStr);
